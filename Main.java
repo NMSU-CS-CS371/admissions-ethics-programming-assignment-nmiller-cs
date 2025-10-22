@@ -53,9 +53,9 @@ public class Main {
                     double rec = Double.parseDouble(p[11]);
                     boolean firstGen = p[12].equalsIgnoreCase("Yes");
                     boolean disability = p[13].equalsIgnoreCase("Yes");
-
+                    boolean dependents = p[14].equalsIgnoreCase("Yes");
                     applicants.add(new Applicant(name, age, geography, ethnicity, income,
-                            legacy, local, gpa, test, extra, essay, rec, firstGen, disability));
+                            legacy, local, gpa, test, extra, essay, rec, firstGen, disability, dependents));
 
                 } catch (Exception e) {
                     System.out.println("Skipping malformed row: " + line);

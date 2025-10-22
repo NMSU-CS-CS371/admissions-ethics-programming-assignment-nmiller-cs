@@ -16,10 +16,11 @@ public class Applicant {
     double rec;
     boolean firstGen;
     boolean disability;
+    boolean dependents;
 
     public Applicant(String name, int age, String geography, String ethnicity, double income,
                      boolean legacy, boolean local, double gpa, int test, double extra,
-                     double essay, double rec, boolean firstGen, boolean disability) {
+                     double essay, double rec, boolean firstGen, boolean disability, boolean dependents) {
         this.name = name;
         this.age = age;
         this.geography = geography;
@@ -34,5 +35,6 @@ public class Applicant {
         this.rec = rec;
         this.firstGen = firstGen;
         this.disability = disability;
+        this.dependents = dependents;
     }
 }
